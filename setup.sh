@@ -1,3 +1,38 @@
+# install dependencies
+if ! command -v nvim &> /dev/null
+then
+  echo "'nvim' not found. Starting setup..."
+  sudo dnf install -y nvim
+else
+  echo "'nvim' already installed."
+fi
+
+if ! command -v wget &> /dev/null
+then
+  echo "'wget' not found. Starting setup..."
+  sudo dnf install -y wget
+else
+  echo "'wget' already installed."
+fi
+
+
+if ! command -v curl &> /dev/null
+then
+  echo "'curl' not found. Starting setup..."
+  sudo dnf install -y curl
+else
+  echo "'curl' already installed."
+fi
+
+if ! command -v unzip &> /dev/null
+then
+  echo "'unzip' not found. Starting setup..."
+  sudo dnf install -y unzip
+else
+  echo "'unzip' already installed."
+fi
+
+
 # install font 'firacode'
 if $(fc-list | grep -i 'fira' -c) == 0 &> /dev/null
 then
