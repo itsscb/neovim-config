@@ -14,7 +14,7 @@ mv ~/.cache/nvim ~/.cache/nvim.bak
 ### Clone this template repository and run the setup script
 
 ```
-jgit clone --depth 1 https://github.com/itsscb/neovim-config ~/.config/nvim
+git clone --depth 1 https://github.com/itsscb/neovim-config ~/.config/nvim
 rm -rf ~/.config/nvim/.git
 chmod +x ~/.config/nvim/setup.sh
 ~/.config/nvim/setup.sh
