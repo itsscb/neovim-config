@@ -34,6 +34,7 @@ end,
             local keymap = vim.api.nvim_set_keymap
             keymap("n", "cr", "<cmd>term cargo check<cr>", opts)
             keymap("i", "<C-_>", "<cmd>RustLsp codeAction<CR>", opts)
+            keymap("n", "<C-_>", "<cmd>RustLsp codeAction<CR>", opts)
       
             keymap("n", "<C-\\>", "<cmd>w | silent! !rustfmt %:p <CR>", opts)
             keymap("n", "<SC-\\>", "<cmd>w | silent! !rustfmt $(find $(pwd) -name \"*.rs\")) <CR>", opts)
